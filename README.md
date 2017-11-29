@@ -1,5 +1,24 @@
 # Spider_finanstilsynet.dk
 
+# That's all about the project
+On the following page, " https://oasm.finanstilsynet.dk/dk/soegeresultat.aspx?t= ", where you check off "Ledende medarbejderes og nærtståendes transaktioner " in the filter to the right, I need you to open each "paragraph" from November and download the attached pdf in each paragraph.
+
+From each pdf document I need the following data placed in excel sorted by company names, i.e. 3. a. in the document (see the attached excel sheet under "Insiderhandel"):
+
+1. a. : Navn (Name of the insider)
+
+2. a. : Stilling/titel (Title)
+
+3. a. : Navn (Name of the company)
+
+4. b. : Transaktionens art (Type of transaction and I only need the ones saying "Salg af aktier" or "Køb af aktier")
+
+4. c. : Pris(er) og mængde(r) (The price of the purchase/sale, i.e. 410.115,00 DKK and the quantity, i.e. 5.756,00)
+
+4. e. : Dato for transaktionen (Date of transaction)
+
+NB. Dots are 1.000 separators, whereas commas are decimals separators.
+
 # RUN
 ```scrapy crawl result_spider -o result.json -t json -a keyword=<keyword> -a total_pages=<how many page your want to scrape>```
 
