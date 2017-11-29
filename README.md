@@ -23,6 +23,7 @@ NB. Dots are 1.000 separators, whereas commas are decimals separators.
 ```scrapy crawl result_spider -o result.json -t json -a keyword=<keyword> -a total_pages=<how many page your want to scrape>```
 
 # Result
+[数据集在这里](https://app.scrapinghub.com/datasets/zdGTG4J6zKy)，可以导出csv或者json格式等。
 
 | _type | data_of_transaction | name_of_company | title | transaction_documents |
 |-------|---------------------|-----------------|-------|-----------------------|
