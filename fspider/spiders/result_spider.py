@@ -14,7 +14,7 @@ class ResultSpiderSpider(scrapy.Spider):
     allowed_domains = ['oasm.finanstilsynet.dk']
 
     def __init__(self, keyword=None, total_pages=None, *args, **kwargs):
-        super(ResultSpiderSpider, self).__init__()
+        super(ResultSpiderSpider, self).__init__(*args, **kwargs)
 
         self.requester = YDHP_ScrapyRequester.ScrapyRequester()
         if keyword is None:
